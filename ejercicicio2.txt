@@ -1,0 +1,34 @@
+package  github;
+
+import java.util.Scanner;
+
+public class Ejercicio2 {
+
+		public static void main(String[] args) {
+				// TODO Auto-generated method stub
+				System.out.println("Bienvenidos al sistema ");
+		Scanner t= new Scanner (System.in);
+		double acum=0;
+
+		int a;
+		
+		double[]numero=new double[50];
+		for(a=0; a < 50; a++){
+			System.out.println("Ingrese las notas  por favor:");
+			numero[a]=t.nextDouble();
+			acum=acum+numero[a];
+		}
+		acum=acum/50;
+		System.out.println("El promedio  de los estudiuantes es:"+acum);
+		
+		if(acum>=7){
+			System.out.println(" el estudiante esta esta aprobado");
+		}else if(acum<7){
+
+		System.out.println(" el estudiante esta reprobado");
+		}
+		}
+
+			
+		}
+

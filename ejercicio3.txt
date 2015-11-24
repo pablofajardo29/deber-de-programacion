@@ -1,0 +1,61 @@
+package prueba;
+
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class O {
+
+	
+		public static void main(String[] args) { ;
+		Scanner dato;
+			
+			
+			
+			System.out.println("******Bienvenido al sistema*****");
+	
+
+			System.out.print("de cuanto fue el total de la compra"); 
+			Scanner comp=new Scanner (System.in);
+			int compra=comp.nextInt();
+			System.out.print("saque una bolita ¿de que color es:");
+			System.out.println("**1.roja**");
+			System.out.println("**2.amarillo**");
+			System.out.println("**3.blanca**");
+			
+			System.out. println("elija una opcion");
+			Scanner opcion=new Scanner(System.in);
+			int op= opcion.nextInt(); 
+			 switch(op){
+			 case 1:
+				 if (op==1){
+					
+					 double tp=(compra*0.40)/100;
+						System.out.print("el total que debe pagar el cliente es $" +tp); 
+				 }
+				 
+
+					break;
+			
+			
+		 case 2:
+			 if (op==2){
+				 double tp=(compra*0.25)/100;
+				 System.out.print("el total que debe pagar el cliente es $" +tp); 
+			
+			
+			 
+			}
+			 break;
+		 case 3:
+			 if (op==3){
+				 System.out.print("el total que debe pagar el cliente es $" +comp); 
+				  int totalpagar=compra; 
+			 }
+			 }
+			
+		}
+			
+			 } 
+			
